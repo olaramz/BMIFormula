@@ -1,5 +1,6 @@
 ﻿using BMIModel;
 using MyLogic;
+using MyModel;
 using System;
 
 namespace BMIFormula
@@ -10,6 +11,11 @@ namespace BMIFormula
         {
          var reply = model.killogram / model.metres;
             return reply;
+        }
+        public double multiply(MultiplyViewModel model)
+        {
+            var give = model.price * model.quantity;
+            return give;
         }
     }
 }
