@@ -4,7 +4,9 @@ using System.Text;
 
 namespace MyModel
 {
-    class AddViewModel
+    public class MultiplyViewModel
     {
+        public double price { get; set; }
+        public double quantity { get; set; }
     }
 }
