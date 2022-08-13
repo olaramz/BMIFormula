@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyLogic;
+using MyModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,5 +26,13 @@ namespace API.Controllers
             var respond = _logic.Formula(model);
             return Ok(respond);
         }
+
+        [HttpPost]
+        public IActionResult multiply(MultiplyViewModel model)
+        {
+            var reply = _logic.multiply(model);
+            return Ok(reply);
+        }
+
     }
 }
